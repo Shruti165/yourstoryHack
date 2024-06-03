@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Prediction</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5">Weather Prediction for Agra</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="humidity">Humidity (%)</label>
+            <input type="number" class="form-control" id="humidity" name="humidity" required>
+        </div>
+        <div class="form-group">
+            <label for="rainfall">Rainfall (mm)</label>
+            <input type="number" class="form-control" id="rainfall" name="rainfall" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+    {% if predicted_temperature %}
+    <h2 class="mt-5">Predicted Temperature: {{ predicted_temperature }} °C</h2>
+    {% endif %}
+</div>
+</body>
+</html>

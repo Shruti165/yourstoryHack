@@ -1,0 +1,72 @@
+[
+  {
+    "model": "weather.weatherdata",
+    "pk": 1,
+    "fields": {
+      "date": "2024-05-27",
+      "temperature": 35.5,
+      "humidity": 45,
+      "rainfall": 0
+    }
+  },
+  {
+    "model": "weather.weatherdata",
+    "pk": 2,
+    "fields": {
+      "date": "2024-05-28",
+      "temperature": 36.0,
+      "humidity": 50,
+      "rainfall": 2
+    }
+  },
+  {
+    "model": "weather.weatherdata",
+    "pk": 3,
+    "fields": {
+      "date": "2024-05-29",
+      "temperature": 34.0,
+      "humidity": 48,
+      "rainfall": 0
+    }
+  },
+  {
+    "model": "weather.weatherdata",
+    "pk": 4,
+    "fields": {
+      "date": "2024-05-30",
+      "temperature": 33.5,
+      "humidity": 55,
+      "rainfall": 3
+    }
+  },
+  {
+    "model": "weather.weatherdata",
+    "pk": 5,
+    "fields": {
+      "date": "2024-05-31",
+      "temperature": 32.0,
+      "humidity": 60,
+      "rainfall": 1
+    }
+  },
+  {
+    "model": "weather.weatherdata",
+    "pk": 6,
+    "fields": {
+      "date": "2024-06-01",
+      "temperature": 34.5,
+      "humidity": 52,
+      "rainfall": 0
+    }
+  },
+  {
+    "model": "weather.weatherdata",
+    "pk": 7,
+    "fields": {
+      "date": "2024-06-02",
+      "temperature": 35.0,
+      "humidity": 50,
+      "rainfall": 0
+    }
+  }
+]
