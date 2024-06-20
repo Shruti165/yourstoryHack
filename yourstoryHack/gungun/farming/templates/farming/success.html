@@ -1,0 +1,17 @@
+{% extends 'farming/base.html' %}
+
+{% block title %}Success{% endblock %}
+
+{% block content %}
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Success!</h4>
+    <p>{{ message }}</p>
+    <hr>
+    <a href="{% url 'add_weather_data' %}" class="btn btn-link">Add more weather data</a><br>
+    <a href="{% url 'add_market_data' %}" class="btn btn-link">Add more market data</a><br>
+    <a href="{% url 'add_farm_strategy' %}" class="btn btn-link">Add more farm strategy</a><br>
+    <a href="{% url 'weather_prediction' %}" class="btn btn-link">View weather predictions</a><br>
+    <a href="{% url 'market_analysis' %}" class="btn btn-link">View market analysis</a><br>
+    <a href="{% url 'optimize_strategy' %}" class="btn btn-link">View optimized strategy</a>
+</div>
+{% endblock %}

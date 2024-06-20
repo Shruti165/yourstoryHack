@@ -1,0 +1,31 @@
+{% extends 'farming/base.html' %}
+
+{% block title %}Market Analysis{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h3>Market Analysis</h3>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered table-striped mt-3">
+            <thead class="thead-dark">
+            <tr>
+                <th>Crop Name</th>
+                <th>Price</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for data in market_data %}
+            <tr>
+                <td>{{ data.crop_name }}</td>
+                <td>{{ data.price }}</td>
+                <td>{{ data.date }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

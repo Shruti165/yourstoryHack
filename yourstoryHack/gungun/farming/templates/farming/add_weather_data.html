@@ -1,0 +1,40 @@
+{% extends 'farming/base.html' %}
+
+{% block title %}Add Weather Data{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h3>Add Weather Data</h3>
+    </div>
+    <div class="card-body">
+        <form method="post" class="needs-validation" novalidate>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+<h3 class="mt-5">Existing Weather Data</h3>
+<table class="table table-bordered table-striped mt-3">
+    <thead class="thead-dark">
+    <tr>
+        <th>Date</th>
+        <th>Temperature</th>
+        <th>Humidity</th>
+        <th>Precipitation</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for data in weather_data %}
+    <tr>
+        <td>{{ data.date }}</td>
+        <td>{{ data.temperature }}</td>
+        <td>{{ data.humidity }}</td>
+        <td>{{ data.precipitation }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

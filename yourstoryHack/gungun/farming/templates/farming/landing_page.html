@@ -1,0 +1,74 @@
+{% extends 'farming/base.html' %}
+
+{% block title %}Gungun - Precision Farming Platform{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid bg-dark text-white">
+    <div class="container">
+        <h1 class="display-4">Welcome to Gungun</h1>
+        <p class="lead">Your platform for precision farming, weather prediction, and market data analysis.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row mb-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Add Weather Data</h5>
+                    <p class="card-text">Input weather data to optimize farming strategies.</p>
+                    <a href="{% url 'add_weather_data' %}" class="btn btn-primary">Add Weather Data</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Add Market Data</h5>
+                    <p class="card-text">Input market data for better market analysis.</p>
+                    <a href="{% url 'add_market_data' %}" class="btn btn-primary">Add Market Data</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Add Farm Strategy</h5>
+                    <p class="card-text">Create and optimize farming strategies.</p>
+                    <a href="{% url 'add_farm_strategy' %}" class="btn btn-primary">Add Farm Strategy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Weather Predictions</h5>
+                    <p class="card-text">View predictions based on historical weather data.</p>
+                    <a href="{% url 'weather_prediction' %}" class="btn btn-primary">View Weather Predictions</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Market Analysis</h5>
+                    <p class="card-text">Analyze market trends based on entered market data.</p>
+                    <a href="{% url 'market_analysis' %}" class="btn btn-primary">View Market Analysis</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Optimized Farm Strategy</h5>
+                    <p class="card-text">Get optimized farming strategies using AI.</p>
+                    <a href="{% url 'optimize_strategy' %}" class="btn btn-primary">View Optimized Strategy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
